@@ -1,0 +1,109 @@
+/*
+Author: inhumba
+Author URI: https://github.com/inhumba
+Version: 1.0
+*/
+
+
+/* VARIABLES
+---------------------------------------*/
+
+// Typography
+$font-maitree:					"Maitree", Helvetica, Arial, sans-serif;
+$heading-font: 					$font-maitree;
+$body-font: 						$font-maitree;
+
+// Font Weight
+$font-weight: (
+	thin: 							100,
+	extra-light: 					200,
+	light: 							300,
+	regular: 						400,
+	medium: 						500,
+	semi-bold: 					600,
+	bold: 							700,
+	extra-bold: 					800,
+	black: 						900
+);
+
+// Color
+$primary-color: 					#e3ffe7;
+$secondary-color: 				#d9e7ff;
+$block-color: 					#444;
+
+
+
+/* STYLE
+---------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: linear-gradient(120deg, $primary-color 0%, $secondary-color 100%);
+	padding: 10px;
+}
+body {
+	background-color: rgba(256,256,256,.5);
+	color: $block-color;
+	font-family: $body-font;
+	font-size: 20px;
+	display: table;
+	height: calc(100% - 20px);
+	width: calc(100% - 120px);
+	padding: 50px;
+	position: absolute;
+}
+
+.title {
+	font-size: 1.6em;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.code {
+	background-color: rgba(256,256,256,.5);
+	border: 2px dashed #ccc;
+	color: #999;
+	font-size: 1em;
+	margin: 50px auto;
+	padding: 20px 30px;
+	position: relative;
+	width: 70%;
+	&::before {
+		content: 'code';
+		display: inline-block;
+		color: #ccc;
+		font-size: .7em;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		text-transform: uppercase;
+	}
+}
+
+.flow-step {
+	list-style: none;
+	margin: 0 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.step-item {
+	a {
+		background-color: #FFF;
+		color: darken($secondary-color, 10%);
+		font-size: .9em;
+		padding: 5px 15px;
+		text-decoration: none;
+		&.current {
+			background-color: darken($secondary-color, 10%);
+			color: #fff;
+		}
+	}
+}
