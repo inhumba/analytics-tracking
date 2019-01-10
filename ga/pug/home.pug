@@ -1,0 +1,76 @@
+//-//- Use Template Base
+extends template.pug
+
+
+//-//- Page Title
+block title
+	title Home :] Google Analytics Tag
+
+
+//-//- Script Tag
+block tag
+	//-//- Script Here
+	include ../tag/tag-home.html
+
+
+block body
+	body
+
+
+		block wrapper
+			//-//- Page Wrapper
+			#app
+
+
+				block header
+					//-//- Header
+					header
+						h1.title Google Analytics Tag
+						h2.sub-title E-commerce Tracking
+
+
+				block main
+					//-//- Main
+					main#main.main
+						.container
+
+							h3.topic Home
+							p Viewing internal promotion banner แสดงแบนเนอร์โปรโมชั่นบนหน้าเว็บ และเก็บค่าการแสดงผลของแต่ละแบนเนอร์ ที่ตำแหน่งต่างๆ 
+
+							.banner-list
+								.banner-item 
+									h5 Promotion 1
+									p Position 1
+								.banner-item 
+									h5 Promotion 2
+									p Position 2
+								.banner-item 
+									h5 Promotion 3
+									p Position 3
+								.banner-item 
+									h5 Promotion 4
+									p Position 4
+
+
+					aside.code
+						xmp
+							include ../tag/tag-home.html
+
+				block footer
+					//-//- Footer
+					footer
+						.container
+
+							nav
+								ul.flow-step
+									li.step-item: a.current(href="#") Home
+									li.step-item: a(href="#") Category
+									li.step-item: a(href="#") Product
+									li.step-item: a(href="#") Cart
+									li.step-item: a(href="#") Buyer
+									li.step-item: a(href="#") Shipping
+									li.step-item: a(href="#") Payment
+									li.step-item: a(href="#") Thanks
+
+
+

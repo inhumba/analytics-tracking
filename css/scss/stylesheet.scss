@@ -29,11 +29,11 @@ $font-weight: (
 // Color
 $primary-color: 					#e3ffe7;
 $secondary-color: 				#d9e7ff;
-$block-color: 					#444;
+$black-color: 					#555;
 
 
 
-/* STYLE
+/* GLOBAL
 ---------------------------------------*/
 
 * {
@@ -46,9 +46,10 @@ html {
 }
 body {
 	background-color: rgba(256,256,256,.5);
-	color: $block-color;
+	color: $black-color;
 	font-family: $body-font;
-	font-size: 20px;
+	font-size: 18px;
+	font-weight: 300;
 	display: table;
 	height: calc(100% - 20px);
 	width: calc(100% - 120px);
@@ -56,10 +57,29 @@ body {
 	position: absolute;
 }
 
+
+/* General
+---------------------------------------*/
+
 .title {
-	font-size: 1.6em;
+	font-size: 2.2em;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+}
+.sub-title {
+	font-size: 1.5em;
+	font-weight: 500;
 	margin-bottom: 50px;
 	text-align: center;
+}
+
+.topic {
+	font-size: 1.2em;
+	font-weight: 500;
+}
+p {
+	font-size: 1em;
 }
 
 .container {
@@ -71,22 +91,30 @@ body {
 	background-color: rgba(256,256,256,.5);
 	border: 2px dashed #ccc;
 	color: #999;
-	font-size: 1em;
-	margin: 50px auto;
-	padding: 20px 30px;
+	font-size: .9em;
+	margin: 80px auto 50px;
+	padding: 0 30px;
 	position: relative;
 	width: 70%;
 	&::before {
 		content: 'code';
 		display: inline-block;
 		color: #ccc;
-		font-size: .7em;
+		font-size: .6em;
 		position: absolute;
 		top: 5px;
 		right: 10px;
 		text-transform: uppercase;
 	}
 }
+
+xmp {
+	font-family: $body-font;
+}
+
+
+/* Navigator
+---------------------------------------*/
 
 .flow-step {
 	list-style: none;
@@ -104,6 +132,29 @@ body {
 		&.current {
 			background-color: darken($secondary-color, 10%);
 			color: #fff;
+		}
+	}
+}
+
+
+/* STYLE
+---------------------------------------*/
+
+.banner-list {
+	margin: 50px 0 70px;
+	display: flex;
+	justify-content: space-between;
+	.banner-item {
+		background-color: $primary-color;
+		border: 1px solid darken($primary-color, 25%);
+		box-shadow:  0 0 20px 0 rgba(0,0,0,.05);
+		padding: 20px 30px;
+		text-align: center;
+		h5 {
+			font-size: 1.1em;
+		}
+		p {
+			font-size: .9em;
 		}
 	}
 }

@@ -43,37 +43,44 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/ga/ga-tag.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "/ga/ga-tag.html",
-		"oF": 0
-		},
-	"/ga/ga.html": {
+	"/ga/home.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/ga/ga.html",
+		"oAP": "/ga/home.html",
 		"oF": 0
 		},
-	"/ga/pug/ga-template.pug": {
+	"/ga/pug/home.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/home.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"/ga/pug/template.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/ga/pug/ga-template.html",
+		"oAP": "/ga/pug/template.html",
 		"oF": 1,
 		"oS": 0
 		},
-	"/ga/pug/ga.pug": {
+	"/ga/tag/tag-global.html": {
 		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "/ga/ga.html",
-		"oF": 2,
-		"oS": 0
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-global.html",
+		"oF": 0
+		},
+	"/ga/tag/tag-home.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-home.html",
+		"oF": 0
 		},
 	"/README.md": {
 		"cB": 0,

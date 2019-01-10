@@ -1,0 +1,36 @@
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-83274559-1');
+	gtag('event', 'view_promotion', {
+	  	'promotions': [
+	  		{
+	  			'id': 'P001', // โปรโมชั่น ID
+	  			'name': 'promotion name 1', // ชื่อโปรโมชั่น
+	  			'creative_name': 'pic with cost', // ลักษณะแบนเนอร์
+	  			'creative_slot': 'hero 1' // ตำแหน่งของแบนเนอร์
+	  		},
+	  		{
+	  			'id': 'P002',
+	  			'name': 'promotion name 2',
+	  			'creative_name': 'red pic',
+	  			'creative_slot': 'hero 2'
+	  		},
+	  		{
+	  			'id': 'P003',
+	  			'name': 'promotion name 3',
+	  			'creative_name': 'bigger text',
+	  			'creative_slot': 'sidebar 1'
+	  		},
+	  		{
+	  			'id': 'P004',
+	  			'name': 'promotion name 1',
+	  			'creative_name': 'pic without cost',
+	  			'creative_slot': 'sidebar 2'
+	  		}
+		]
+	});
+</script>
