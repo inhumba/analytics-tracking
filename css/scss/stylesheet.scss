@@ -158,3 +158,44 @@ xmp {
 		}
 	}
 }
+
+.product-list {
+	margin: 50px 0 70px;
+	display: flex;
+	flex-direction: column;
+	.product-item {
+		background-color: $primary-color;
+		border: 1px solid darken($primary-color, 25%);
+		box-shadow:  0 0 20px 0 rgba(0,0,0,.05);
+		margin-bottom: 30px;
+		padding: 20px;
+		h5 {
+			font-size: 1.1em;
+		}
+		p {
+			font-size: .9em;
+		}
+		.desc {
+			background-color: #fff;
+			float: right;
+			padding: 20px 30px;
+			h4 {
+				font-size: 1.1em;
+			}
+			h5 {
+				font-size: 1em;
+			}
+			h6 {
+				font-size: .9em;
+				font-weight: 300;
+			}
+			p {
+				color: red;
+				margin-top: 10px;
+				font-size: 1.1em;
+				font-weight: 600;
+				text-align: right;
+			}
+		}
+	}
+}

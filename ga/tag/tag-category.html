@@ -1,0 +1,51 @@
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-83274559-1');
+
+	// คลิกที่โปรโมชั่นไหนมา หากไม่ได้คลิกมาก็ไม่ต้องใส่
+	gtag('event', 'select_content', {
+	  	'promotions': [
+	  		{
+	  			'id': 'P002', // โปรโมชั่น ID
+	  			'name': 'promotion name 2', // ชื่อโปรโมชั่น
+	  		}
+		]
+	});
+
+	// แสดงรายการสินค้า
+	gtag('event', 'view_item_list', {
+		'items': [
+			{
+				'id': 'SKU001', // รหัสสินค้า
+				'name': 'Product Name 1', // ชื่อสินค้า
+				'brand': 'Product Brand 1', // ยี่ห้อสินค้า
+				'category': 'Product Category 1', // หมวดหมู่สินค้า
+				'variant': 'Product Variant 1', // ลักษณะของสินค้า
+				'list_name': 'click form promotion name 2', // แสดงรายการสินค้านี้จากอะไร
+				'list_position': 1 // ลำดับของสินค้าที่แสดงในรายการ
+			},
+			{
+				'id': 'SKU002',
+				'name': 'Product Name 2',
+				'brand': 'Product Brand 2',
+				'category': 'Product Category 2',
+				'variant': 'Product Variant 2',
+				'list_name': 'click form promotion name 2',
+				'list_position': 2
+			},
+			{
+				'id': 'SKU003',
+				'name': 'Product Name 3',
+				'brand': 'Product Brand 3',
+				'category': 'Product Category 3',
+				'variant': 'Product Variant 3',
+				'list_name': 'click form promotion name 2',
+				'list_position': 3
+			}
+		]
+	});
+</script>

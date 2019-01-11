@@ -1,0 +1,83 @@
+//-//- Use Template Base
+extends template.pug
+
+
+//-//- Page Title
+block title
+	title Category :] Google Analytics Tag
+
+
+//-//- Script Tag
+block tag
+	//-//- Script Here
+	include ../tag/tag-category.html
+
+
+block body
+	body
+
+
+		block wrapper
+			//-//- Page Wrapper
+			#app
+
+
+				block header
+					//-//- Header
+					header
+						h1.title Google Analytics Tag
+						h2.sub-title E-commerce Tracking
+
+
+				block main
+					//-//- Main
+					main#main.main
+						.container
+
+							h3.topic Category
+							p Click on promotion banner and view products in product list คลิกที่แบนเนอร์โปรโมชั่นจากหน้า Home แล้วมาแสดงผลรายการสินค้าที่หน้า Category
+
+							.product-list
+								.product-item
+									h5 Product 1
+									p Position 1
+									.desc
+										h4 Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿100
+								.product-item
+									h5 Product 2
+									p Position 2
+									.desc
+										h4 Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿200
+								.product-item
+									h5 Product 3
+									p Position 3
+									.desc
+										h4 Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿300
+
+
+					aside.code
+						xmp
+							include ../tag/tag-category.html
+
+				block footer
+					//-//- Footer
+					footer
+						.container
+
+							//-//- Page step
+							- var step =  '2'
+
+							//-//- Nav
+							include nav.pug
+
+
+
