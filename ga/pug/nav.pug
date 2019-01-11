@@ -1,0 +1,42 @@
+nav
+	ul.flow-step
+
+		if step === '1'
+			li.step-item: a.current(href="#") Home
+		else
+			li.step-item: a(href="#") Home
+
+		if step === '2'
+			li.step-item: a.current(href="#") Category
+		else
+			li.step-item: a(href="#") Category
+
+		if step === '3'
+			li.step-item: a.current(href="#") Product
+		else
+			li.step-item: a(href="#") Product
+
+		if step === '4'
+			li.step-item: a.current(href="#") Cart
+		else
+			li.step-item: a(href="#") Cart
+
+		if step === '5'
+			li.step-item: a.current(href="#") Buyer
+		else
+			li.step-item: a(href="#") Buyer
+
+		if step === '6'
+			li.step-item: a.current(href="#") Shipping
+		else
+			li.step-item: a(href="#") Shipping
+
+		if step === '7'
+			li.step-item: a.current(href="#") Payment
+		else
+			li.step-item: a(href="#") Payment
+
+		if step === '8'
+			li.step-item: a.current(href="#") Thanks
+		else
+			li.step-item: a(href="#") Thanks

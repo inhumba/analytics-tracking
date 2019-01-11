@@ -59,6 +59,15 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"/ga/pug/nav.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/ga/pug/nav.html",
+		"oF": 1,
+		"oS": 0
+		},
 	"/ga/pug/template.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -80,6 +89,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "/ga/tag/tag-home.html",
+		"oF": 0
+		},
+	"/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/README.html",
 		"oF": 0
 		},
 	"/README.md": {
