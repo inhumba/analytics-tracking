@@ -1,5 +1,4 @@
 # E-commerce Tracking with Google Analytics Tag
- --
 
 ## 8 Steps of e-commerce ##
 - Home
@@ -12,9 +11,17 @@
 - Thanks
 
 ### Home ###
-Viewing internal promotion banner แสดงแบนเนอร์โปรโมชั่นบนหน้าเว็บ และเก็บค่าการแสดงผลของแต่ละแบนเนอร์ ที่ตำแหน่งต่างๆ
+View internal promotion banner
+แสดงแบนเนอร์โปรโมชั่นบนหน้าเว็บ
+**เก็บค่าการแสดงผลของแต่ละแบนเนอร์ ที่ตำแหน่งต่างๆ**
 
---
+### Category ###
+Click on promotion banner and view products in product list
+คลิกที่แบนเนอร์โปรโมชั่นจากหน้า Home แล้วมาแสดงผลรายการสินค้าที่หน้า Category
+**เก็บว่าคลิกที่แบนเนอร์ไหน**
+**เก็บค่าการแสดงรายการสิินค้า และตำแหน่งของสิินค้าในรายการนั้นๆ**
+
+---
 
 Favicon made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
