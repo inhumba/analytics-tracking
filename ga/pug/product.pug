@@ -1,0 +1,67 @@
+//-//- Use Template Base
+extends template.pug
+
+
+//-//- Page Title
+block title
+	title Product :] Google Analytics Tag
+
+
+//-//- Script Tag
+block tag
+	//-//- Script Here
+	include ../tag/tag-product.html
+
+
+block body
+	body
+
+
+		block wrapper
+			//-//- Page Wrapper
+			#app
+
+
+				block header
+					//-//- Header
+					header
+						h1.title Google Analytics Tag
+						h2.sub-title E-commerce Tracking
+
+
+				block main
+					//-//- Main
+					main#main.main
+						.container
+
+							h3.topic Product
+							p Click on product in product list and and view product detail คลิกที่สินค้าจากหน้า Category แล้วมาหน้าแสดงรายละเอียดของสินค้านั้นๆ
+
+							.product-detail
+								.product-item
+									h5 Product Detail 3 
+									.desc
+										h4 Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿300
+										.button Buy Now!
+
+
+					aside.code
+						xmp
+							include ../tag/tag-product.html
+
+				block footer
+					//-//- Footer
+					footer
+						.container
+
+							//-//- Page step
+							- var step =  '3'
+
+							//-//- Nav
+							include nav.pug
+
+
+

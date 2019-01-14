@@ -1,0 +1,39 @@
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-83274559-1');
+
+	// คลิกรายการสินค้าตำแหน่งไหนมา หากไม่ได้คลิกมาก็ไม่ต้องใส่
+	gtag('event', 'select_content', {
+		'content_type': 'product',
+	  	'items': [
+	  		{
+				'id': 'SKU003', // รหัสสินค้า
+				'name': 'Product Name 3', // ชื่อสินค้า
+				'brand': 'Product Brand 3', // ยี่ห้อสินค้า
+				'category': 'Product Category 3', // หมวดหมู่สินค้า
+				'variant': 'Product Variant 3', // ลักษณะของสินค้า
+				'list_name': 'click form promotion name 2', // แสดงรายการสินค้านี้จากอะไร
+				'list_position': 3 // ลำดับของสินค้าที่แสดงในรายการ
+			},
+		]
+	});
+
+	// แสดงรายละเอียดสินค้า
+	gtag('event', 'view_item', {
+		'items': [
+			{
+				'id': 'SKU003', // รหัสสินค้า
+				'name': 'Product Name 3', // ชื่อสินค้า
+				'brand': 'Product Brand 3', // ยี่ห้อสินค้า
+				'category': 'Product Category 3', // หมวดหมู่สินค้า
+				'variant': 'Product Variant 3', // ลักษณะของสินค้า
+				'list_name': 'click form promotion name 2', // แสดงรายการสินค้านี้จากอะไร
+				'list_position': 3 // ลำดับของสินค้าที่แสดงในรายการ
+			}
+		]
+	});
+</script>
