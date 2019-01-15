@@ -31,8 +31,8 @@ Add product to shopping cart คลิกเพิ่มสินค้าไป
 Remove product form shopping cart คลิกลบสินค้าออกจากตระกร้าสินค้า<br>
 **- เก็บว่าคลิกสินค้าไหนออกจากตระกร้าบ้าง**
 
- __BUG__ : ถ้าใช้ [gtag.js] (https://developers.google.com/analytics/devguides/collection/gtagjs/) ค่า Product List Name ไม่แสดง จะขึ้นเป็น (not set)
- แก้โดยกลับไปใช้ [analytics.js] (https://developers.google.com/analytics/devguides/collection/analyticsjs/) แทน
+ __BUG__ : ถ้าใช้ <a href="https://developers.google.com/analytics/devguides/collection/gtagjs/">gtag.js</a> ค่า Product List Name ไม่แสดง จะขึ้นเป็น (not set)
+ แก้โดยกลับไปใช้ <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">analytics.js</a> แทน
 
 ---
 
