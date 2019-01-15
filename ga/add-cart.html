@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <title>Cart :] Google Analytics Tag</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="inhumba">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maitree:300,500,600&amp;subset=thai">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83274559-1"></script>
+    
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-83274559-1');
+
+	// เพิ่มสินค้าลงตระกร้า
+	gtag('event', 'add_to_cart', {
+		'items': [
+	  		{
+				'id': 'SKU003', // รหัสสินค้า
+				'name': 'Product Name 3', // ชื่อสินค้า
+				'brand': 'Product Brand 3', // ยี่ห้อสินค้า
+				'category': 'Product Category 3', // หมวดหมู่สินค้า
+				'variant': 'Product Variant 3', // ลักษณะของสินค้า
+				'list_name': 'click form promotion name 2', // แสดงรายการสินค้านี้จากอะไร *** BUG ***
+				'list_position': 3 // ลำดับของสินค้าที่แสดงในรายการ
+			}
+		]
+	});
+</script>
+
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="title">Google Analytics Tag</h1>
+        <h2 class="sub-title">E-commerce Tracking</h2>
+      </header>
+      <main class="main" id="main">
+        <div class="container">
+          <h3 class="topic">Cart</h3>
+          <p>Add product to shopping cart คลิกเพิ่มสินค้าไปที่ตระกร้าสินค้า</p>
+          <p><b>*** BUG ค่าไม่ขึ้นใน analytics report ตรง Product List Name ขึ้นเป็น (not set)<b>  -> <a href="https://stackoverflow.com/questions/47892020/google-analytics-gtag-js-product-list-name-doesnt-appear-but-other-fields-do">Link 1</a> <a href="https://stackoverflow.com/questions/50609440/gtag-list-name-property-not-working-as-described-in-documentation">Link 2</a></p>
+          <div class="cart-list">
+            <div class="cart-item">
+              <div class="desc">
+                <h4>Product 3 : Product Name : Product Brand</h4>
+                <h5>Product Category</h5>
+                <h6>Product Variant</h6>
+                <p>฿300</p>
+              </div>
+            </div>
+            <div class="button">Checkout</div>
+          </div>
+        </div>
+      </main>
+      <aside class="code">
+        <xmp>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-83274559-1');
+
+	// เพิ่มสินค้าลงตระกร้า
+	gtag('event', 'add_to_cart', {
+		'items': [
+	  		{
+				'id': 'SKU003', // รหัสสินค้า
+				'name': 'Product Name 3', // ชื่อสินค้า
+				'brand': 'Product Brand 3', // ยี่ห้อสินค้า
+				'category': 'Product Category 3', // หมวดหมู่สินค้า
+				'variant': 'Product Variant 3', // ลักษณะของสินค้า
+				'list_name': 'click form promotion name 2', // แสดงรายการสินค้านี้จากอะไร *** BUG ***
+				'list_position': 3 // ลำดับของสินค้าที่แสดงในรายการ
+			}
+		]
+	});
+</script>
+
+        </xmp>
+      </aside>
+      <footer>
+        <div class="container">
+          <nav>
+            <ul class="flow-step">
+              <li class="step-item"><a href="home.html">Home</a></li>
+              <li class="step-item"><a href="category.html">Category</a></li>
+              <li class="step-item"><a href="product.html">Product</a></li>
+              <li class="step-item"><a class="current" href="#">Cart</a></li>
+              <li class="step-item"><a href="buyer.html">Buyer</a></li>
+              <li class="step-item"><a href="shipping.html">Shipping</a></li>
+              <li class="step-item"><a href="payment.html">Payment</a></li>
+              <li class="step-item"><a href="thanks.html">Thanks</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

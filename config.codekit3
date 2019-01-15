@@ -43,11 +43,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/ga/cart.html": {
+	"/ga/add-cart.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/ga/cart.html",
+		"oAP": "/ga/add-cart.html",
 		"oF": 0
 		},
 	"/ga/category.html": {
@@ -71,12 +71,12 @@
 		"oAP": "/ga/product.html",
 		"oF": 0
 		},
-	"/ga/pug/cart.pug": {
+	"/ga/pug/add-cart.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/ga/cart.html",
+		"oAP": "/ga/add-cart.html",
 		"oF": 2,
 		"oS": 0
 		},
@@ -116,6 +116,15 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"/ga/pug/remove-cart.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/pug/remove-cart.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/ga/pug/template.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -125,19 +134,19 @@
 		"oF": 1,
 		"oS": 0
 		},
+	"/ga/tag/tag-add-cart.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-add-cart.html",
+		"oF": 0
+		},
 	"/ga/tag/tag-analytics.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "/ga/tag/tag-analytics.html",
 		"oF": 1
-		},
-	"/ga/tag/tag-cart.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "/ga/tag/tag-cart.html",
-		"oF": 0
 		},
 	"/ga/tag/tag-category.html": {
 		"cB": 0,
