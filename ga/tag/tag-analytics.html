@@ -1,0 +1,38 @@
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83274559-1"></script>
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83274559-1', 'auto');
+
+// Plugin enhanced ecommerce
+ga('require', 'ec');
+
+// Add product to cart
+// function addToCart(product) {
+ga('ec:addProduct', {
+	'id': 'SKU003', // รหัสสินค้า
+	'name': 'Product Name 3', // ชื่อสินค้า
+	'brand': 'Product Brand 3', // ยี่ห้อสินค้า
+	'category': 'Product Category 3', // หมวดหมู่สินค้า
+	'variant': 'Product Variant 3', // ลักษณะของสินค้า
+	'position': 3, // ลำดับของสินค้าที่แสดงในรายการ
+	'price': 300, // ราคาสินค้า
+	'quantity': 1 // จำนวนสินค้า
+});
+ga('ec:setAction', 'add', {
+	list: 'click form promotion name 2' // แสดงรายการสินค้านี้จากอะไร
+});
+// ga('send', 'event', 'UX', 'click', 'add to cart');     // Send data using an event.
+// }
+
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->

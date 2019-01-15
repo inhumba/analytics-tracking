@@ -43,6 +43,13 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/ga/cart.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/cart.html",
+		"oF": 0
+		},
 	"/ga/category.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -56,6 +63,22 @@
 		"oA": 0,
 		"oAP": "/ga/home.html",
 		"oF": 0
+		},
+	"/ga/product.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/product.html",
+		"oF": 0
+		},
+	"/ga/pug/cart.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/cart.html",
+		"oF": 2,
+		"oS": 0
 		},
 	"/ga/pug/category.pug": {
 		"cB": 0,
@@ -102,6 +125,20 @@
 		"oF": 1,
 		"oS": 0
 		},
+	"/ga/tag/tag-analytics.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-analytics.html",
+		"oF": 1
+		},
+	"/ga/tag/tag-cart.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-cart.html",
+		"oF": 0
+		},
 	"/ga/tag/tag-category.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -109,11 +146,11 @@
 		"oAP": "/ga/tag/tag-category.html",
 		"oF": 0
 		},
-	"/ga/tag/tag-global.html": {
+	"/ga/tag/tag-gtag.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/ga/tag/tag-global.html",
+		"oAP": "/ga/tag/tag-gtag.html",
 		"oF": 0
 		},
 	"/ga/tag/tag-home.html": {

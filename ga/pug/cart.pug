@@ -1,0 +1,68 @@
+//-//- Use Template Base
+extends template.pug
+
+
+//-//- Page Title
+block title
+	title Cart :] Google Analytics Tag
+
+
+//-//- Script Tag
+block tag
+	//-//- Script Here
+	include ../tag/tag-gtag.html
+	include ../tag/tag-cart.html
+
+
+block body
+	body
+
+
+		block wrapper
+			//-//- Page Wrapper
+			#app
+
+
+				block header
+					//-//- Header
+					header
+						h1.title Google Analytics Tag
+						h2.sub-title E-commerce Tracking
+
+
+				block main
+					//-//- Main
+					main#main.main
+						.container
+
+							h3.topic Cart
+							p Add product to shopping cart คลิกเพิ่มสินค้าไปที่ตระกร้าสินค้า
+							p <b>*** BUG ค่าไม่ขึ้นใน analytics report ตรง Product List Name ขึ้นเป็น (not set)<b>  -> <a href="https://stackoverflow.com/questions/47892020/google-analytics-gtag-js-product-list-name-doesnt-appear-but-other-fields-do">Link 1</a> <a href="https://stackoverflow.com/questions/50609440/gtag-list-name-property-not-working-as-described-in-documentation">Link 2</a>
+
+							.cart-list
+								.cart-item
+									.desc
+										h4 Product 3 : Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿300
+								.button Checkout
+
+
+					aside.code
+						xmp
+							include ../tag/tag-cart.html
+
+				block footer
+					//-//- Footer
+					footer
+						.container
+
+							//-//- Page step
+							- var step =  '4'
+
+							//-//- Nav
+							include nav.pug
+
+
+

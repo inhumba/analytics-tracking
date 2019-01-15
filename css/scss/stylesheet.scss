@@ -80,6 +80,10 @@ body {
 }
 p {
 	font-size: 1em;
+	margin-bottom: 15px;
+}
+a {
+	color: darken($secondary-color, 15%);
 }
 
 .container {
@@ -214,19 +218,53 @@ xmp {
 				text-align: center;
 			}
 		}
-		.button {
-			background-color: $secondary-color;
-			border-radius: 5px;
-			border: 1px solid darken($secondary-color, 5%);
-			box-shadow:  0 0 10px 0 rgba(0,0,0,.1);
-			color: #fff;
-			font-size: 1em;
-			font-weight: 600;
-			margin: 15px auto 0;
-			padding: 10px;
-			text-shadow:  1px 1px 0 rgba(0,0,0,.2);
-			text-transform: uppercase;
-			width: 150px;
+	}
+}
+
+.button {
+	background-color: $secondary-color;
+	border-radius: 5px;
+	border: 1px solid darken($secondary-color, 5%);
+	box-shadow:  0 0 10px 0 rgba(0,0,0,.1);
+	color: #fff;
+	font-size: 1em;
+	font-weight: 600;
+	margin: 15px auto 0;
+	padding: 10px;
+	text-align: center;
+	text-shadow:  1px 1px 0 rgba(0,0,0,.2);
+	text-transform: uppercase;
+	width: 150px;
+}
+
+.cart-list {
+	background-color: $primary-color;
+	border: 1px solid darken($primary-color, 25%);
+	box-shadow:  0 0 20px 0 rgba(0,0,0,.05);
+	margin: 50px 0 70px;
+	padding: 20px;
+	.cart-item {
+		.desc {
+			background-color: #fff;
+			margin-bottom: 20px;
+			padding: 20px 30px;
+			h4 {
+				font-size: 1.1em;
+			}
+			h5 {
+				font-size: 1em;
+			}
+			h6 {
+				font-size: .9em;
+				font-weight: 300;
+			}
+			p {
+				color: red;
+				margin-top: 10px;
+				font-size: 1.1em;
+				font-weight: 600;
+				text-align: right;
+			}
 		}
 	}
 }
