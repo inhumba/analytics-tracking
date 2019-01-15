@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
   <head>
-    <title>Cart :] Google Analytics Tag</title>
+    <title>Remove Cart :] Google Analytics Tag</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,8 +21,8 @@
 
 	gtag('config', 'UA-83274559-1');
 
-	// เพิ่มสินค้าลงตระกร้า
-	gtag('event', 'add_to_cart', {
+	// ลบสินค้าออกจากตระกร้า
+	gtag('event', 'remove_from_cart', {
 		'items': [
 	  		{
 				'id': 'SKU003', // รหัสสินค้า
@@ -46,9 +46,9 @@
       </header>
       <main class="main" id="main">
         <div class="container">
-          <h3 class="topic">Cart</h3>
-          <p>Add product to shopping cart คลิกเพิ่มสินค้าไปที่ตระกร้าสินค้า</p>
-          <p><b>*** BUG ค่าไม่ขึ้นใน analytics report ตรง Product List Name ขึ้นเป็น (not set)<b>  -> <a href="https://stackoverflow.com/questions/47892020/google-analytics-gtag-js-product-list-name-doesnt-appear-but-other-fields-do">Link 1</a> <a href="https://stackoverflow.com/questions/50609440/gtag-list-name-property-not-working-as-described-in-documentation">Link 2</a></p>
+          <h3 class="topic">Remove Cart</h3>
+          <p>Remove product form shopping cart คลิกลบสินค้าออกจากตระกร้าสินค้า</p>
+          <p><b>*** BUG ค่าไม่ขึ้นใน analytics report ตรง Product List Name ขึ้นเป็น (not set)</b>  -> <a href="https://stackoverflow.com/questions/47892020/google-analytics-gtag-js-product-list-name-doesnt-appear-but-other-fields-do">Link 1</a> <a href="https://stackoverflow.com/questions/50609440/gtag-list-name-property-not-working-as-described-in-documentation">Link 2</a></p>
           <div class="cart-list">
             <div class="cart-item">
               <div class="desc">
@@ -58,7 +58,7 @@
                 <p>฿300</p>
               </div>
             </div>
-            <div class="button">Checkout</div>
+            <div class="button">Remove</div>
           </div>
         </div>
       </main>
@@ -71,8 +71,8 @@
 
 	gtag('config', 'UA-83274559-1');
 
-	// เพิ่มสินค้าลงตระกร้า
-	gtag('event', 'add_to_cart', {
+	// ลบสินค้าออกจากตระกร้า
+	gtag('event', 'remove_from_cart', {
 		'items': [
 	  		{
 				'id': 'SKU003', // รหัสสินค้า
@@ -96,7 +96,7 @@
               <li class="step-item"><a href="home.html">Home</a></li>
               <li class="step-item"><a href="category.html">Category</a></li>
               <li class="step-item"><a href="product.html">Product</a></li>
-              <li class="step-item"><a class="current" href="#">Cart</a></li>
+              <li class="step-item"><a class="current" href="remove-cart.html">Remove Cart</a></li>
               <li class="step-item"><a href="buyer.html">Buyer</a></li>
               <li class="step-item"><a href="shipping.html">Shipping</a></li>
               <li class="step-item"><a href="payment.html">Payment</a></li>

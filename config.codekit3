@@ -43,6 +43,13 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/ga/add-cart-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/add-cart-analyticsjs.html",
+		"oF": 0
+		},
 	"/ga/add-cart.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -70,6 +77,15 @@
 		"oA": 0,
 		"oAP": "/ga/product.html",
 		"oF": 0
+		},
+	"/ga/pug/add-cart-analyticsjs.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/add-cart-analyticsjs.html",
+		"oF": 2,
+		"oS": 0
 		},
 	"/ga/pug/add-cart.pug": {
 		"cB": 0,
@@ -116,13 +132,22 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"/ga/pug/remove-cart-analyticsjs.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/remove-cart-analyticsjs.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"/ga/pug/remove-cart.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/ga/pug/remove-cart.html",
-		"oF": 0,
+		"oAP": "/ga/remove-cart.html",
+		"oF": 2,
 		"oS": 0
 		},
 	"/ga/pug/template.pug": {
@@ -134,19 +159,33 @@
 		"oF": 1,
 		"oS": 0
 		},
+	"/ga/remove-cart-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/remove-cart-analyticsjs.html",
+		"oF": 0
+		},
+	"/ga/remove-cart.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/remove-cart.html",
+		"oF": 0
+		},
+	"/ga/tag/tag-add-cart-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-add-cart-analyticsjs.html",
+		"oF": 1
+		},
 	"/ga/tag/tag-add-cart.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "/ga/tag/tag-add-cart.html",
 		"oF": 0
-		},
-	"/ga/tag/tag-analytics.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "/ga/tag/tag-analytics.html",
-		"oF": 1
 		},
 	"/ga/tag/tag-category.html": {
 		"cB": 0,
@@ -175,6 +214,20 @@
 		"oA": 1,
 		"oAP": "/ga/tag/tag-product.html",
 		"oF": 0
+		},
+	"/ga/tag/tag-remove-cart-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-remove-cart-analyticsjs.html",
+		"oF": 0
+		},
+	"/ga/tag/tag-remove-cart.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-remove-cart.html",
+		"oF": 1
 		},
 	"/README.html": {
 		"cB": 0,

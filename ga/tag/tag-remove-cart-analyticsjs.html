@@ -1,0 +1,32 @@
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83274559-1', 'auto');
+
+// ใส่ปลั๊กอิน enhanced ecommerce
+ga('require', 'ec');
+
+// ลบสินค้าออกจากตระกร้า
+ga('ec:addProduct', {
+	'id': 'SKU004', // รหัสสินค้า
+	'name': 'Product Name 4', // ชื่อสินค้า
+	'brand': 'Product Brand 4', // ยี่ห้อสินค้า
+	'category': 'Product Category 4', // หมวดหมู่สินค้า
+	'variant': 'Product Variant 4', // ลักษณะของสินค้า
+	'position': 4, // ลำดับของสินค้าที่แสดงในรายการ
+});
+ga('ec:setAction', 'remove', {
+	list: 'click form promotion name 4' // แสดงรายการสินค้านี้จากอะไร
+});
+
+// ส่ง event 
+ga('send', 'event', 'Enhanced Ecommerce', 'Click', 'Remove to Cart');
+
+// ส่ง pageview
+ga('send', 'pageview');
+</script>

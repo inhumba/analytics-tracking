@@ -10,8 +10,8 @@ block title
 //-//- Script Tag
 block tag
 	//-//- Script Here
-	include ../tag/tag-gtag.html
-	include ../tag/tag-add-cart.html
+	//- include ../tag/tag-gtag.html
+	include ../tag/tag-add-cart-analyticsjs.html
 
 
 block body
@@ -37,21 +37,20 @@ block body
 
 							h3.topic Add Cart
 							p Add product to shopping cart คลิกเพิ่มสินค้าไปที่ตระกร้าสินค้า
-							p <b>*** BUG ค่าไม่ขึ้นใน analytics report ตรง Product List Name ขึ้นเป็น (not set)</b>  -> <a href="https://stackoverflow.com/questions/47892020/google-analytics-gtag-js-product-list-name-doesnt-appear-but-other-fields-do">Link 1</a> <a href="https://stackoverflow.com/questions/50609440/gtag-list-name-property-not-working-as-described-in-documentation">Link 2</a>
 
 							.cart-list
 								.cart-item
 									.desc
-										h4 Product 3 : Product Name : Product Brand
+										h4 Product 4 : Product Name : Product Brand
 										h5 Product Category
 										h6 Product Variant
-										p ฿300
+										p ฿400
 								.button Checkout
 
 
 					aside.code
 						xmp
-							include ../tag/tag-add-cart.html
+							include ../tag/tag-add-cart-analyticsjs.html
 
 				block footer
 					//-//- Footer
