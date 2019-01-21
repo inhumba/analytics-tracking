@@ -1,0 +1,38 @@
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-83274559-1');
+
+	// ข้อมูลสินค้า เข้า checkout step แรก
+	gtag('event', 'begin_checkout', {
+		'items': [
+	  		{
+				'id': 'SKU001', // รหัสสินค้า
+				'name': 'Product Name 1', // ชื่อสินค้า
+				'brand': 'Product Brand 1', // ยี่ห้อสินค้า
+				'category': 'Product Category 1', // หมวดหมู่สินค้า
+				'variant': 'Product Variant 1', // ลักษณะของสินค้า
+				'list_name': 'click form promotion name 2', // แสดงรายการสินค้านี้จากอะไร *** BUG ***
+				'list_position': 1, // ลำดับของสินค้าที่แสดงในรายการ
+				'quantity': 1, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
+				'price': 100.00, // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+				'coupon': 'COUPONPRO' // คูปองเฉพาะสินค้า - ไม่แสดงค่าบน analytics report
+			},
+			{
+				'id': 'SKU002',
+				'name': 'Product Name 2',
+				'brand': 'Product Brand 2',
+				'category': 'Product Category 2',
+				'variant': 'Product Variant 2',
+				'list_name': 'click form promotion name 2', 
+				'list_position': 2,
+				'quantity': 2,
+				'price': 200.00
+			},
+		],
+		'coupon': 'COUPONALL' // คูปองทั้งตระกร้า - ไม่แสดงค่าบน analytics report
+	});
+</script>

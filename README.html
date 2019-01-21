@@ -14,7 +14,7 @@
 <li>Category</li>
 <li>Product</li>
 <li>Add Cart / Remove Cart</li>
-<li>Buyer</li>
+<li>Checkout</li>
 <li>Shipping</li>
 <li>Payment</li>
 <li>Thanks</li>
@@ -44,6 +44,14 @@
 
 <p>Remove product form shopping cart คลิกลบสินค้าออกจากตระกร้าสินค้า<br>
 <strong>- เก็บว่าคลิกสินค้าไหนออกจากตระกร้าบ้าง</strong></p>
+
+<p><strong>BUG</strong> : ถ้าใช้ <a href="https://developers.google.com/analytics/devguides/collection/gtagjs/">gtag.js</a> ค่า Product List Name ไม่แสดง จะขึ้นเป็น (not set)
+แก้โดยกลับไปใช้ <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">analytics.js</a> แทน</p>
+
+<h4 id="checkout">Checkout</h4>
+
+<p>Begin checkout step ส่งค่ารายละเอียดสินค้าจากตระกร้าเข้าสู่กระบวนการ checkout ใส่คูปองไปก็เท่านั้น ค่าไม่ขึ้น เพราะจะเก็บค่าได้ตอน event purchase เท่านั้น<br>
+<strong>- เก็บว่าซื้อสินค้าอะไรบ้าง</strong></p>
 
 <p><strong>BUG</strong> : ถ้าใช้ <a href="https://developers.google.com/analytics/devguides/collection/gtagjs/">gtag.js</a> ค่า Product List Name ไม่แสดง จะขึ้นเป็น (not set)
 แก้โดยกลับไปใช้ <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">analytics.js</a> แทน</p>
