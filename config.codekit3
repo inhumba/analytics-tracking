@@ -64,6 +64,13 @@
 		"oAP": "/ga/category.html",
 		"oF": 0
 		},
+	"/ga/checkout-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/checkout-analyticsjs.html",
+		"oF": 0
+		},
 	"/ga/checkout.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -76,6 +83,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/ga/home.html",
+		"oF": 0
+		},
+	"/ga/payment-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/payment-analyticsjs.html",
 		"oF": 0
 		},
 	"/ga/product.html": {
@@ -148,6 +162,15 @@
 		"oF": 1,
 		"oS": 0
 		},
+	"/ga/pug/payment-analyticsjs.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/payment-analyticsjs.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"/ga/pug/product.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -175,6 +198,15 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"/ga/pug/shipping-analyticsjs.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/shipping-analyticsjs.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"/ga/pug/template.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -182,6 +214,15 @@
 		"oA": 1,
 		"oAP": "/ga/pug/template.html",
 		"oF": 1,
+		"oS": 0
+		},
+	"/ga/pug/thanks-analyticsjs.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/thanks-analyticsjs.html",
+		"oF": 2,
 		"oS": 0
 		},
 	"/ga/remove-cart-analyticsjs.html": {
@@ -196,6 +237,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/ga/remove-cart.html",
+		"oF": 0
+		},
+	"/ga/shipping-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/shipping-analyticsjs.html",
 		"oF": 0
 		},
 	"/ga/tag/tag-add-cart-analyticsjs.html": {
@@ -247,6 +295,13 @@
 		"oAP": "/ga/tag/tag-home.html",
 		"oF": 0
 		},
+	"/ga/tag/tag-payment-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-payment-analyticsjs.html",
+		"oF": 0
+		},
 	"/ga/tag/tag-product.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -267,6 +322,20 @@
 		"oA": 1,
 		"oAP": "/ga/tag/tag-remove-cart.html",
 		"oF": 1
+		},
+	"/ga/tag/tag-shipping-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-shipping-analyticsjs.html",
+		"oF": 0
+		},
+	"/ga/tag/tag-thanks-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-thanks-analyticsjs.html",
+		"oF": 0
 		},
 	"/README.html": {
 		"cB": 0,

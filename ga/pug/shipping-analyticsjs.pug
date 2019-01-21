@@ -1,0 +1,80 @@
+//-//- Use Template Base
+extends template.pug
+
+
+//-//- Page Title
+block title
+	title Shipping :] Google Analytics Tag
+
+
+//-//- Script Tag
+block tag
+	//-//- Script Here
+	//- include ../tag/tag-gtag.html
+	include ../tag/tag-shipping-analyticsjs.html
+
+
+block body
+	body
+
+
+		block wrapper
+			//-//- Page Wrapper
+			#app
+
+
+				block header
+					//-//- Header
+					header
+						h1.title Google Analytics Tag
+						h2.sub-title E-commerce Tracking
+
+
+				block main
+					//-//- Main
+					main#main.main
+						.container
+
+							h3.topic Shipping
+							p Shipping checkout step ส่งค่ารายละเอียดสินค้า และค่า option ว่าจัดส่งยังไง
+
+							.product-list
+								h3.topic Delivery : EMS
+								.product-item
+									h5 Product 4
+									p Position 4
+									.desc
+										h4 Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿400 X 1
+										.button COUPONPRO
+								.product-item
+									h5 Product 5
+									p Position 5
+									.desc
+										h4 Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿500 X 2
+
+								.button COUPONALL
+
+
+					aside.code
+						xmp
+							include ../tag/tag-shipping-analyticsjs.html
+
+				block footer
+					//-//- Footer
+					footer
+						.container
+
+							//-//- Page step
+							- var step =  '6'
+
+							//-//- Nav
+							include nav.pug
+
+
+

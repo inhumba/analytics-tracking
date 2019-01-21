@@ -51,10 +51,31 @@
 <h4 id="checkout">Checkout</h4>
 
 <p>Begin checkout step ส่งค่ารายละเอียดสินค้าจากตระกร้าเข้าสู่กระบวนการ checkout ใส่คูปองไปก็เท่านั้น ค่าไม่ขึ้น เพราะจะเก็บค่าได้ตอน event purchase เท่านั้น<br>
-<strong>- เก็บว่าซื้อสินค้าอะไรบ้าง</strong></p>
+<strong>- เก็บว่าซื้อสินค้าอะไรบ้าง</strong><br>
+<strong>- เก็บว่า option ของ step นี้</strong></p>
 
 <p><strong>BUG</strong> : ถ้าใช้ <a href="https://developers.google.com/analytics/devguides/collection/gtagjs/">gtag.js</a> ค่า Product List Name ไม่แสดง จะขึ้นเป็น (not set)
 แก้โดยกลับไปใช้ <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">analytics.js</a> แทน</p>
+
+<h4 id="shipping">Shipping</h4>
+
+<p>Shipping checkout step ส่งค่ารายละเอียดสินค้า และค่า option ว่าจัดส่งยังไง<br>
+<strong>- เก็บว่าผ่านมา step นี้ไหม</strong><br>
+<strong>- เก็บค่า option ของ step นี้</strong></p>
+
+<h4 id="payment">Payment</h4>
+
+<p>Payment checkout step ส่งค่ารายละเอียดสินค้า และค่า option ว่าจ่ายเงินยังไง<br>
+<strong>- เก็บว่าผ่านมา step นี้ไหม</strong><br>
+<strong>- เก็บค่า option ของ step นี้</strong></p>
+
+<h4 id="thanks">Thanks</h4>
+
+<p>Purchase complete with transaction ส่งค่า transaction รายละเอียดสินค้า รวมถึงคูปองที่ใช้ทั้งหมด<br>
+<strong>- เก็บค่าสินค้าที่ซื้อ</strong><br>
+<strong>- เก็บราคา ภาษี ค่าขนส่ง</strong><br>
+<strong>- เก็บว่าใช้คูปองอะไรบ้าง</strong><br>
+<strong>- เก็บว่าซื้อผ่าน affiliate อะไร</strong></p>
 
 <hr />
 

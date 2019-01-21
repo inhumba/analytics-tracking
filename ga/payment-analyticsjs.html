@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
   <head>
-    <title>Checkout :] Google Analytics Tag</title>
+    <title>Payment :] Google Analytics Tag</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,7 +21,7 @@ ga('create', 'UA-83274559-1', 'auto');
 // ใส่ปลั๊กอิน enhanced ecommerce
 ga('require', 'ec');
 
-// ข้อมูลสินค้าเข้า checkout step แรก
+// ข้อมูลสินค้าเข้า checkout step
 ga('ec:addProduct', {
 	'id': 'SKU004', // รหัสสินค้า
 	'name': 'Product Name 4', // ชื่อสินค้า
@@ -49,11 +49,11 @@ ga('ec:setAction', 'click', {
 
 // ส่งค่า checkout step
 ga('ec:setAction','checkout', {
-    'step': 1
+    'step': 3
 });
 
 // ส่ง event และ checkout option
-ga('send', 'event', 'Enhanced Ecommerce', 'checkout_option', 'Member', 1);
+ga('send', 'event', 'Enhanced Ecommerce', 'checkout_option', 'Visa', 3);
 
 // ส่ง pageview
 ga('send', 'pageview');
@@ -67,9 +67,10 @@ ga('send', 'pageview');
       </header>
       <main class="main" id="main">
         <div class="container">
-          <h3 class="topic">Checkout</h3>
-          <p>Begin checkout step ส่งค่ารายละเอียดสินค้าจากตระกร้าเข้าสู่กระบวนการ checkout ใส่คูปองไปก็เท่านั้น ค่าไม่ขึ้น เพราะจะเก็บค่าได้ตอน event purchase เท่านั้น</p>
+          <h3 class="topic">Payment</h3>
+          <p>Payment checkout step ส่งค่ารายละเอียดสินค้า และค่า option ว่าจ่ายเงินยังไง</p>
           <div class="product-list">
+            <h3 class="topic">Payment : Visa</h3>
             <div class="product-item">
               <h5>Product 4</h5>
               <p>Position 4</p>
@@ -109,7 +110,7 @@ ga('create', 'UA-83274559-1', 'auto');
 // ใส่ปลั๊กอิน enhanced ecommerce
 ga('require', 'ec');
 
-// ข้อมูลสินค้าเข้า checkout step แรก
+// ข้อมูลสินค้าเข้า checkout step
 ga('ec:addProduct', {
 	'id': 'SKU004', // รหัสสินค้า
 	'name': 'Product Name 4', // ชื่อสินค้า
@@ -137,11 +138,11 @@ ga('ec:setAction', 'click', {
 
 // ส่งค่า checkout step
 ga('ec:setAction','checkout', {
-    'step': 1
+    'step': 3
 });
 
 // ส่ง event และ checkout option
-ga('send', 'event', 'Enhanced Ecommerce', 'checkout_option', 'Member', 1);
+ga('send', 'event', 'Enhanced Ecommerce', 'checkout_option', 'Visa', 3);
 
 // ส่ง pageview
 ga('send', 'pageview');
@@ -156,9 +157,9 @@ ga('send', 'pageview');
               <li class="step-item"><a href="category.html">Category</a></li>
               <li class="step-item"><a href="product.html">Product</a></li>
               <li class="step-item"><a href="add-cart.html">Add Cart</a></li>
-              <li class="step-item"><a class="current" href="#">Checkout</a></li>
+              <li class="step-item"><a href="checkout.html">Checkout</a></li>
               <li class="step-item"><a href="shipping.html">Shipping</a></li>
-              <li class="step-item"><a href="payment.html">Payment</a></li>
+              <li class="step-item"><a class="current" href="#">Payment</a></li>
               <li class="step-item"><a href="thanks.html">Thanks</a></li>
             </ul>
           </nav>

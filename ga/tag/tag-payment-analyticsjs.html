@@ -11,7 +11,7 @@ ga('create', 'UA-83274559-1', 'auto');
 // ใส่ปลั๊กอิน enhanced ecommerce
 ga('require', 'ec');
 
-// ข้อมูลสินค้าเข้า checkout step แรก
+// ข้อมูลสินค้าเข้า checkout step
 ga('ec:addProduct', {
 	'id': 'SKU004', // รหัสสินค้า
 	'name': 'Product Name 4', // ชื่อสินค้า
@@ -39,11 +39,11 @@ ga('ec:setAction', 'click', {
 
 // ส่งค่า checkout step
 ga('ec:setAction','checkout', {
-    'step': 1
+    'step': 3
 });
 
 // ส่ง event และ checkout option
-ga('send', 'event', 'Enhanced Ecommerce', 'checkout_option', 'Member', 1);
+ga('send', 'event', 'Enhanced Ecommerce', 'checkout_option', 'Visa', 3);
 
 // ส่ง pageview
 ga('send', 'pageview');

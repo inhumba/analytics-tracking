@@ -1,0 +1,60 @@
+//-//- Use Template Base
+extends template.pug
+
+
+//-//- Page Title
+block title
+	title Thanks :] Google Analytics Tag
+
+
+//-//- Script Tag
+block tag
+	//-//- Script Here
+	//- include ../tag/tag-gtag.html
+	include ../tag/tag-thanks-analyticsjs.html
+
+
+block body
+	body
+
+
+		block wrapper
+			//-//- Page Wrapper
+			#app
+
+
+				block header
+					//-//- Header
+					header
+						h1.title Google Analytics Tag
+						h2.sub-title E-commerce Tracking
+
+
+				block main
+					//-//- Main
+					main#main.main
+						.container
+
+							h3.topic Thanks
+							p Purchase complete with transaction ส่งค่า transaction รายละเอียดสินค้า รวมถึงคูปองที่ใช้ทั้งหมด
+
+							h5.thanks-txt Thank You
+
+
+					aside.code
+						xmp
+							include ../tag/tag-thanks-analyticsjs.html
+
+				block footer
+					//-//- Footer
+					footer
+						.container
+
+							//-//- Page step
+							- var step =  '8'
+
+							//-//- Nav
+							include nav.pug
+
+
+

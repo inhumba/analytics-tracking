@@ -11,7 +11,7 @@ ga('create', 'UA-83274559-1', 'auto');
 // ใส่ปลั๊กอิน enhanced ecommerce
 ga('require', 'ec');
 
-// ข้อมูลสินค้าเข้า checkout step แรก
+// ข้อมูลสินค้า
 ga('ec:addProduct', {
 	'id': 'SKU004', // รหัสสินค้า
 	'name': 'Product Name 4', // ชื่อสินค้า
@@ -19,8 +19,8 @@ ga('ec:addProduct', {
 	'category': 'Product Category 4', // หมวดหมู่สินค้า
 	'variant': 'Product Variant 4', // ลักษณะของสินค้า
 	'position': 4, // ลำดับของสินค้าที่แสดงในรายการ
-	'quantity': 1, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
-	'price': 400.00, // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+	'quantity': 1, // จำนวนสินค้า
+	'price': 400.00, // ราคาสินค้า
 	'coupon': 'COUPONPRO' // คูปองเฉพาะสินค้า
 });
 ga('ec:addProduct', {
@@ -30,20 +30,22 @@ ga('ec:addProduct', {
 	'category': 'Product Category 5', // หมวดหมู่สินค้า
 	'variant': 'Product Variant 5', // ลักษณะของสินค้า
 	'position': 5, // ลำดับของสินค้าที่แสดงในรายการ
-	'quantity': 2, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
-	'price': 500.00 // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+	'quantity': 2, // จำนวนสินค้า
+	'price': 500.00 // ราคาสินค้า
 });
 ga('ec:setAction', 'click', {
-	list: 'click form promotion name 4' // แสดงรายการสินค้านี้จากอะไร ต้องสัมพันธ์กับ step add cart
+	list: 'click form promotion name 4' // แสดงรายการสินค้านี้จากอะไร ต้องสัมพันธ์กับ step add cart *** BUG ***
 });
 
-// ส่งค่า checkout step
-ga('ec:setAction','checkout', {
-    'step': 1
+// ส่งค่า order
+ga('ec:setAction', 'purchase', {
+	'id': 'T00001', // รหัส transaction
+	'affiliation': 'AM00125633', // รหัส affiliate
+	'revenue': '1400', // ราคาทั้งหมด
+	'tax': '98', // ค่าภาษี
+	'shipping': '22', // ค่าขนส่ง
+	'coupon': 'COUPONALL' // คูปองทั้ง order
 });
-
-// ส่ง event และ checkout option
-ga('send', 'event', 'Enhanced Ecommerce', 'checkout_option', 'Member', 1);
 
 // ส่ง pageview
 ga('send', 'pageview');

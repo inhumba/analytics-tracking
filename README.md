@@ -36,10 +36,28 @@ __BUG__ : ถ้าใช้ <a href="https://developers.google.com/analytics/de
 
 #### Checkout
 Begin checkout step ส่งค่ารายละเอียดสินค้าจากตระกร้าเข้าสู่กระบวนการ checkout ใส่คูปองไปก็เท่านั้น ค่าไม่ขึ้น เพราะจะเก็บค่าได้ตอน event purchase เท่านั้น<br>
-**- เก็บว่าซื้อสินค้าอะไรบ้าง**
+**- เก็บว่าซื้อสินค้าอะไรบ้าง**<br>
+**- เก็บว่า option ของ step นี้**
 
 __BUG__ : ถ้าใช้ <a href="https://developers.google.com/analytics/devguides/collection/gtagjs/">gtag.js</a> ค่า Product List Name ไม่แสดง จะขึ้นเป็น (not set)
 แก้โดยกลับไปใช้ <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">analytics.js</a> แทน
+
+#### Shipping
+Shipping checkout step ส่งค่ารายละเอียดสินค้า และค่า option ว่าจัดส่งยังไง<br>
+**- เก็บว่าผ่านมา step นี้ไหม**<br>
+**- เก็บค่า option ของ step นี้**
+
+#### Payment
+Payment checkout step ส่งค่ารายละเอียดสินค้า และค่า option ว่าจ่ายเงินยังไง<br>
+**- เก็บว่าผ่านมา step นี้ไหม**<br>
+**- เก็บค่า option ของ step นี้**
+
+#### Thanks
+Purchase complete with transaction ส่งค่า transaction รายละเอียดสินค้า รวมถึงคูปองที่ใช้ทั้งหมด<br>
+**- เก็บค่าสินค้าที่ซื้อ**<br>
+**- เก็บราคา ภาษี ค่าขนส่ง**<br>
+**- เก็บว่าใช้คูปองอะไรบ้าง**<br>
+**- เก็บว่าซื้อผ่าน affiliate อะไร**
 
 ---
 
