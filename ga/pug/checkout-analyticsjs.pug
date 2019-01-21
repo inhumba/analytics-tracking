@@ -1,0 +1,79 @@
+//-//- Use Template Base
+extends template.pug
+
+
+//-//- Page Title
+block title
+	title Checkout :] Google Analytics Tag
+
+
+//-//- Script Tag
+block tag
+	//-//- Script Here
+	//- include ../tag/tag-gtag.html
+	include ../tag/tag-checkout-analyticsjs.html
+
+
+block body
+	body
+
+
+		block wrapper
+			//-//- Page Wrapper
+			#app
+
+
+				block header
+					//-//- Header
+					header
+						h1.title Google Analytics Tag
+						h2.sub-title E-commerce Tracking
+
+
+				block main
+					//-//- Main
+					main#main.main
+						.container
+
+							h3.topic Checkout
+							p Begin checkout step ส่งค่ารายละเอียดสินค้าจากตระกร้าเข้าสู่กระบวนการ checkout ใส่คูปองไปก็เท่านั้น ค่าไม่ขึ้น เพราะจะเก็บค่าได้ตอน event purchase เท่านั้น
+
+							.product-list
+								.product-item
+									h5 Product 4
+									p Position 4
+									.desc
+										h4 Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿400 X 1
+										.button COUPONPRO
+								.product-item
+									h5 Product 5
+									p Position 5
+									.desc
+										h4 Product Name : Product Brand
+										h5 Product Category
+										h6 Product Variant
+										p ฿500 X 2
+
+								.button COUPONALL
+
+
+					aside.code
+						xmp
+							include ../tag/tag-checkout-analyticsjs.html
+
+				block footer
+					//-//- Footer
+					footer
+						.container
+
+							//-//- Page step
+							- var step =  '5'
+
+							//-//- Nav
+							include nav.pug
+
+
+

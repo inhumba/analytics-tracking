@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <title>Checkout :] Google Analytics Tag</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="inhumba">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maitree:300,500,600&amp;subset=thai">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83274559-1', 'auto');
+
+// ใส่ปลั๊กอิน enhanced ecommerce
+ga('require', 'ec');
+
+// ข้อมูลสินค้า เข้า checkout step แรก
+ga('ec:addProduct', {
+	'id': 'SKU004', // รหัสสินค้า
+	'name': 'Product Name 4', // ชื่อสินค้า
+	'brand': 'Product Brand 4', // ยี่ห้อสินค้า
+	'category': 'Product Category 4', // หมวดหมู่สินค้า
+	'variant': 'Product Variant 4', // ลักษณะของสินค้า
+	'position': 4, // ลำดับของสินค้าที่แสดงในรายการ
+	'quantity': 1, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
+	'price': 400.00, // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+	'coupon': 'COUPONPRO' // คูปองเฉพาะสินค้า - ไม่แสดงค่าบน analytics report
+});
+ga('ec:addProduct', {
+	'id': 'SKU005', // รหัสสินค้า
+	'name': 'Product Name 5', // ชื่อสินค้า
+	'brand': 'Product Brand 5', // ยี่ห้อสินค้า
+	'category': 'Product Category 5', // หมวดหมู่สินค้า
+	'variant': 'Product Variant 5', // ลักษณะของสินค้า
+	'position': 5, // ลำดับของสินค้าที่แสดงในรายการ
+	'quantity': 2, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
+	'price': 500.00 // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+});
+ga('ec:setAction', 'click', {
+	list: 'click form promotion name 4' // แสดงรายการสินค้านี้จากอะไร ต้องสัมพันธ์กับ step add cart
+});
+
+// ส่งค่า checkout step กับ option
+ga('ec:setAction','checkout', {
+    'step': 1,
+    'option': 'Member'
+});
+
+// ส่ง event 
+ga('send', 'event', 'Checkout', 'Click', 'Checkout Step 1');
+
+// ส่ง pageview
+ga('send', 'pageview');
+</script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1 class="title">Google Analytics Tag</h1>
+        <h2 class="sub-title">E-commerce Tracking</h2>
+      </header>
+      <main class="main" id="main">
+        <div class="container">
+          <h3 class="topic">Checkout</h3>
+          <p>Begin checkout step ส่งค่ารายละเอียดสินค้าจากตระกร้าเข้าสู่กระบวนการ checkout ใส่คูปองไปก็เท่านั้น ค่าไม่ขึ้น เพราะจะเก็บค่าได้ตอน event purchase เท่านั้น</p>
+          <div class="product-list">
+            <div class="product-item">
+              <h5>Product 4</h5>
+              <p>Position 4</p>
+              <div class="desc">
+                <h4>Product Name : Product Brand</h4>
+                <h5>Product Category</h5>
+                <h6>Product Variant</h6>
+                <p>฿400 X 1</p>
+                <div class="button">COUPONPRO</div>
+              </div>
+            </div>
+            <div class="product-item">
+              <h5>Product 5</h5>
+              <p>Position 5</p>
+              <div class="desc">
+                <h4>Product Name : Product Brand</h4>
+                <h5>Product Category</h5>
+                <h6>Product Variant</h6>
+                <p>฿500 X 2</p>
+              </div>
+            </div>
+            <div class="button">COUPONALL</div>
+          </div>
+        </div>
+      </main>
+      <aside class="code">
+        <xmp>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83274559-1', 'auto');
+
+// ใส่ปลั๊กอิน enhanced ecommerce
+ga('require', 'ec');
+
+// ข้อมูลสินค้า เข้า checkout step แรก
+ga('ec:addProduct', {
+	'id': 'SKU004', // รหัสสินค้า
+	'name': 'Product Name 4', // ชื่อสินค้า
+	'brand': 'Product Brand 4', // ยี่ห้อสินค้า
+	'category': 'Product Category 4', // หมวดหมู่สินค้า
+	'variant': 'Product Variant 4', // ลักษณะของสินค้า
+	'position': 4, // ลำดับของสินค้าที่แสดงในรายการ
+	'quantity': 1, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
+	'price': 400.00, // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+	'coupon': 'COUPONPRO' // คูปองเฉพาะสินค้า - ไม่แสดงค่าบน analytics report
+});
+ga('ec:addProduct', {
+	'id': 'SKU005', // รหัสสินค้า
+	'name': 'Product Name 5', // ชื่อสินค้า
+	'brand': 'Product Brand 5', // ยี่ห้อสินค้า
+	'category': 'Product Category 5', // หมวดหมู่สินค้า
+	'variant': 'Product Variant 5', // ลักษณะของสินค้า
+	'position': 5, // ลำดับของสินค้าที่แสดงในรายการ
+	'quantity': 2, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
+	'price': 500.00 // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+});
+ga('ec:setAction', 'click', {
+	list: 'click form promotion name 4' // แสดงรายการสินค้านี้จากอะไร ต้องสัมพันธ์กับ step add cart
+});
+
+// ส่งค่า checkout step กับ option
+ga('ec:setAction','checkout', {
+    'step': 1,
+    'option': 'Member'
+});
+
+// ส่ง event 
+ga('send', 'event', 'Checkout', 'Click', 'Checkout Step 1');
+
+// ส่ง pageview
+ga('send', 'pageview');
+</script>
+        </xmp>
+      </aside>
+      <footer>
+        <div class="container">
+          <nav>
+            <ul class="flow-step">
+              <li class="step-item"><a href="home.html">Home</a></li>
+              <li class="step-item"><a href="category.html">Category</a></li>
+              <li class="step-item"><a href="product.html">Product</a></li>
+              <li class="step-item"><a href="add-cart.html">Add Cart</a></li>
+              <li class="step-item"><a class="current" href="#">Checkout</a></li>
+              <li class="step-item"><a href="shipping.html">Shipping</a></li>
+              <li class="step-item"><a href="payment.html">Payment</a></li>
+              <li class="step-item"><a href="thanks.html">Thanks</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83274559-1', 'auto');
+
+// ใส่ปลั๊กอิน enhanced ecommerce
+ga('require', 'ec');
+
+// ข้อมูลสินค้า เข้า checkout step แรก
+ga('ec:addProduct', {
+	'id': 'SKU004', // รหัสสินค้า
+	'name': 'Product Name 4', // ชื่อสินค้า
+	'brand': 'Product Brand 4', // ยี่ห้อสินค้า
+	'category': 'Product Category 4', // หมวดหมู่สินค้า
+	'variant': 'Product Variant 4', // ลักษณะของสินค้า
+	'position': 4, // ลำดับของสินค้าที่แสดงในรายการ
+	'quantity': 1, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
+	'price': 400.00, // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+	'coupon': 'COUPONPRO' // คูปองเฉพาะสินค้า - ไม่แสดงค่าบน analytics report
+});
+ga('ec:addProduct', {
+	'id': 'SKU005', // รหัสสินค้า
+	'name': 'Product Name 5', // ชื่อสินค้า
+	'brand': 'Product Brand 5', // ยี่ห้อสินค้า
+	'category': 'Product Category 5', // หมวดหมู่สินค้า
+	'variant': 'Product Variant 5', // ลักษณะของสินค้า
+	'position': 5, // ลำดับของสินค้าที่แสดงในรายการ
+	'quantity': 2, // จำนวนสินค้า - ไม่แสดงค่าบน analytics report
+	'price': 500.00 // ราคาสินค้า - ไม่แสดงค่าบน analytics report
+});
+ga('ec:setAction', 'click', {
+	list: 'click form promotion name 4' // แสดงรายการสินค้านี้จากอะไร ต้องสัมพันธ์กับ step add cart
+});
+
+// ส่งค่า checkout step กับ option
+ga('ec:setAction','checkout', {
+    'step': 1,
+    'option': 'Member'
+});
+
+// ส่ง event 
+ga('send', 'event', 'Checkout', 'Click', 'Checkout Step 1');
+
+// ส่ง pageview
+ga('send', 'pageview');
+</script>

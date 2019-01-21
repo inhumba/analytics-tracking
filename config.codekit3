@@ -64,6 +64,13 @@
 		"oAP": "/ga/category.html",
 		"oF": 0
 		},
+	"/ga/checkout.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ga/checkout.html",
+		"oF": 0
+		},
 	"/ga/home.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -102,6 +109,15 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "/ga/category.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"/ga/pug/checkout-analyticsjs.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/ga/checkout-analyticsjs.html",
 		"oF": 2,
 		"oS": 0
 		},
@@ -201,6 +217,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "/ga/tag/tag-category.html",
+		"oF": 0
+		},
+	"/ga/tag/tag-checkout-analyticsjs.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/ga/tag/tag-checkout-analyticsjs.html",
 		"oF": 0
 		},
 	"/ga/tag/tag-checkout.html": {
